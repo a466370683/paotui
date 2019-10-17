@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/paopaoapp/css/goodslist.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="image"></div>
+<h1>单单列表</h1>
+<ul>
+{%for goods in goodslist%}
+<li>{{goods.adress}}&nbsp&nbsp<a href = '/paopaoapp/getorder/?id={{goods.id}}'>&nbsp&nbsp接单&nbsp</a></li>
+{%endfor%}
+</ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/paopaoapp/css/index.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="image"></div>
+{%if code == 1%}
+<a class="cls" href = "/paopao/">我是跑跑</a>
+{%elif code == 0%}
+<a class="cls" href = "/order/">我是单单</a>
+{%else%}
+<a class="cls" href = "/paopao/">请登录</a>
+{%endif%}
+{%if username != '未登录'%}
+<p id="exit_id">{{username}}<a style="text-decoration:none;color:#ff00ffff;" href = '/exit/'>退出</a></p>
+{%endif%}
+</body>
+</html>

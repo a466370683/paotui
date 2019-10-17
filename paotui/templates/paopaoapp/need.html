@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/paopaoapp/css/need.css">
+    <script  src="/static/jquery.js"></script>
+    <script type="text/javascript" src="/static/paopaoapp/js/need.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="image"></div><div id="h1"></div><h1>请下单</h1>
+<form action = '/paopaoapp/addorder/' method = 'post'>
+    地&nbsp&nbsp址&nbsp&nbsp:&nbsp<input id="adress_id" type = 'text' name = 'adress' value = {{adress}}>&nbsp<span></span><br><br>
+    价&nbsp&nbsp格&nbsp&nbsp:&nbsp<input id="price_id" type = 'text' name = 'price'> 元&nbsp<span></span><br><br>需求描述:
+    <textarea id="needalt_id" name = 'needalt' rows="10" cols="50"></textarea>&nbsp<span></span>
+    <br><br><input id="sub_id" type = 'submit' value = '提交'>
+</form>
+</body>
+</html>
